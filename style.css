@@ -1,0 +1,83 @@
+  body {
+    padding: 0;
+    text-align: center;
+  }
+  
+  #game-intro {
+    padding: 70px 0px;
+  }
+  
+  #game-container {
+   
+    width: 100vw;
+    padding: 20px 0px;
+    justify-content: center;
+    /* display:none; */
+  }
+  
+  
+  #game-screen {
+    margin-left:auto ;
+    margin-right:auto;
+    padding: 0px 10px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(./imagenes/roadblack.png);
+    background-size: cover;
+    animation: slide 5s linear infinite;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes slide {
+    0% {
+      background-position: 0 -800px;
+    }
+    95% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 50px;
+    }
+  }
+
+  @media (width < 767px) {
+    /* Your styles for small devices here */
+    #game-screen {
+      background-size: contain;
+    }
+  }
+  
+  #game-end {
+    display: none;
+    padding: 20px 0px;
+
+  }
+  
+  .game-intro p {
+    font-size: 30px;
+    font-family: "Verdana";
+  }
+  
+  .logo-img {
+    width: 350px;
+  }
+  
+  .arrows-img {
+    width: 250px;
+  }
+  
+  body button {
+    font-size: 30px;
+    background-color: #870007;
+    color: #fff;
+    padding: 20px 40px;
+    border: 1;
+    box-shadow: 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  
