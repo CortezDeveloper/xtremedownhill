@@ -44,7 +44,7 @@ class Game {
     //loop that does everything (engine)
 
     update(){
-        debugger
+        // debugger
         const newTime = Date.now()
         const delta = newTime - this.timeStamp
         this.player.move()
@@ -86,6 +86,7 @@ class Game {
         this.gameIsOver = true
         this.gameScreen.style.display = "none"
         this.gameEndScreen.style.display = "block"
+        
     }
 }
 

@@ -4,6 +4,7 @@ window.onload = function () {
     let game;
   
     startButton.addEventListener("click", function () {
+      document.querySelector("#game-container").classList.remove("hidden")
       startGame();
     });
   

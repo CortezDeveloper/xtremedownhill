@@ -5,40 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Downhill-Skate</title>
+    <title>Xtreme-Downhill</title>
   </head>
   <body>
     <main>
-      <audio id="background-music" src="./music/gamesong.mp3" loop autoplay></audio>
+      <audio id="background-music" src="./music/gamesong.mp3" loop autoplay muted></audio>
       <audio id="collision-sound" preload="auto">
         <source src="./music/ouch2.mp3" type="audio/mpeg">
       </audio>
       
       <!-- #game-intro is initially shown on the game start screen -->
       <div id="game-intro">
-        <img src="./imagenes/apds.jpeg" alt="" class="logo-img" /><br><br>
+        <img src="./imagenes/apds2.png" alt="" class="logo-img" /><br><br>
         <br />
         <button id="start-button">Downhill Now!</button>
-        <p><strong>Felipe is out of control !</strong><br><br> Use narrows to skate</p>
+        <p class="control"><strong>Felipe Malaga is out of control !</strong></p>
+        <p class="narrows">Use narrows to skate</p>
         <img src="./imagenes/arrowskate.png" alt="" class="arrows-img" />
       </div>
 
-      <div id="game-screen">   
-        <div>
-          <h2>Stats</h2>
-          <p>Score: <span id="score">0</span></p>
-          <p>Lives: <span id="lives">3</span></p>
-        </div>
-              
+      <div id="game-container" class="hidden">
+        <h2 class="your-points">Your Points</h2>
+        <p class="total">Total: <span id="score">0</span></p>
+        <p class="total">Lives: <span id="lives">3</span></p>
       </div>
-      <div id="game-container">
-        <!-- #game-screen is initially hidden using CSS style display: none -->
+      
+      <!-- #game-screen is initially hidden using CSS style display: none -->
+      <div id="game-screen" class="hidden">   
       </div>
+      <!-- <div>
+      </div>
+               -->
 
       <!-- #game-end is initially hidden using CSS style display: none -->
       <div id="game-end">
-        <img src="./imagenes/apds.jpeg" alt="" class="logo-img" /><br>
-        <h1><em>You Crash!</em> <br><br>Game Over</h1>
+        <img src="./imagenes/apds2.png" alt="" class="logo-img" /><br>
+        <!-- <h1 class="crash">YOU CRASH 😮</h1> -->
+        <h2 class="over">GAME OVER</h2>
         <br />
         <button id="restart-button">Skate Again</button>
       </div>

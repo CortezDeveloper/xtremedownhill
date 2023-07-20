@@ -1,6 +1,31 @@
   body {
     padding: 0;
     text-align: center;
+    background-image: url("./imagenes/felipeback4.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .your-points {
+    font-size: 30px;
+    font-family: 'Raleway',sans-serif;
+    text-shadow: 1px 1px #000000;
+    background-color: #ed1c24;
+    color: #fff;
+    padding: 20px 40px;
+    border: 1;
+    box-shadow: 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .total {
+    font-family: 'Raleway',sans-serif;
+    font-size: 25px;
+    text-shadow: 1px 1px #000000;
+    color: #fff;
+    margin: 10px 0;
   }
   
   #game-intro {
@@ -25,6 +50,37 @@
     background-image: url(./imagenes/roadblack.png);
     background-size: cover;
     animation: slide 5s linear infinite;
+  }
+
+  .control{
+    font-size: 30px;
+    font-family: 'Raleway',sans-serif;
+    color: #fff;
+    padding: 20px 40px;
+    text-shadow: 1px 1px #000000;
+    margin-bottom: 10px;
+  }
+
+  .narrows{
+    font-size: 30px;
+    font-family: 'Raleway',sans-serif;
+    color: #000000;
+    padding: 20px 40px;
+    margin-bottom: 0px; 
+    text-shadow: 1px 1px #fff;
+  }
+
+  .crash{
+    font-family: 'Raleway',sans-serif;
+    text-shadow: 1px 1px #fff;
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  .over{
+    font-family: 'Raleway',sans-serif;
+    text-shadow: 1px 1px #fff;
+    font-size: 40px;
   }
 
   .hidden {
@@ -67,11 +123,13 @@
   
   .arrows-img {
     width: 250px;
+    margin-top: -60px;
   }
   
   body button {
     font-size: 30px;
-    background-color: #870007;
+    font-family: 'Raleway',sans-serif;
+    background-color: #ed1c24;
     color: #fff;
     padding: 20px 40px;
     border: 1;

@@ -34,17 +34,18 @@ class Player extends Component{
     didCollide(obstacle){
         const playerRect = this.element.getBoundingClientRect()
         const obstacleRect = obstacle.element.getBoundingClientRect()
-        const collisionSound = document.getElementById("collision-sound")
-
+        
         if (
             playerRect.left < obstacleRect.right &&
             playerRect.right > obstacleRect.left &&
             playerRect.top < obstacleRect.bottom &&
             playerRect.bottom > obstacleRect.top 
-        ){
-            console.log("Crash!")
-
-            const collisionSound = document.getElementById("collision-sound");
+            ){
+                console.log("Crash!")
+                
+                // const collisionSound = document.getElementById("collision-sound");
+            const collisionSound = document.getElementById("collision-sound")
+            // collisionSound.volume = 0.2
             collisionSound.play();
         //    function playCollisionSound(){
         //     const backgroundMusic = document.getElementById("background-music")
