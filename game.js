@@ -16,12 +16,13 @@ class Game {
         this.scoreDisplay = document.getElementById("score")
         this.livesDisplay = document.getElementById("lives")
         this.timeStamp = Date.now()
+        this.music = document.getElementById("background-music")
     }
 
     start() {
         this.gameScreen.style.height = `${this.height}px`
         this.gameScreen.style.width = `${this.width}px`
-    
+        this.music.play()
 
         this.startScreen.style.display = "none"
         this.gameScreen.style.display = "block"
